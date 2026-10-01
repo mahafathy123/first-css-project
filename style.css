@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Quicksand", sans-serif;
+}
+header{
+    height: 100vh;
+    background: url(./images/home_bg.jpeg)   no-repeat center/cover fixed;
+    position: relative;
+}
+.primary-text{
+    color: rgb(255, 255, 0);
+}
+.btn{
+    display: inline-block;
+    border: 2px solid #fff;
+    
+   
+    text-align: center;
+}
+.btn-primary{
+    
+    border: 2px solid #fff;
+    color: #fff;
+     border-radius: 15px;
+     padding: 15px 30px;
+     transition: .2s ;
+    
+}
+.btn-primary:hover{
+    background-color: yellow;
+    opacity: .4;
+    color: black;
+    transform: translate(5px,5px);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* header start */
+#navbar{
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+}
+#navbar img{
+    width: 80px;
+    margin-left: 100px;
+
+}
+#navbar ul{ 
+    display: flex;
+    margin-right: 100px;
+    
+}
+#navbar ul li a{
+    padding: 15px;
+    color: aliceblue;
+    font-weight: 600;
+}
+#navbar ul li a:hover{
+    border-bottom: 2px solid yellow;
+}
+header .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+header .content h1{
+    font-size: 40px;
+    color: aliceblue;
+}
+header .content p{
+    margin: 20px 0 40px;
+    color: aliceblue;
+}
+header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0);
+    opacity: .5;
+}
+header *{
+    z-index: 5;
+}
+#about{
+    width: 80vw;  
+    margin: auto;
+    height: 100vh;     
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    
+}
+#about .title
+{
+    text-align: center;
+    margin-bottom: 4rem;
+
+}
+#about h2{
+    font-size: 40px;
+    color:#383848;
+    margin-bottom: 20px;
+}
+#about .title p{
+    font-size: 14px;
+    color:#606069;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+#about .about-content{
+    display: flex;
+    justify-content: space-between;
+}
+#about .about-content div p{
+    font-weight: 500px;
+    word-spacing:3px;
+    margin-right:7rem;
+    line-height: 1.6;
+
+
+}
+.btn-secondary{
+    background-color: #383848;
+    color: aliceblue;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    margin: 100px auto; 
+    border-radius: 20px;
+}
+.btn-secondary:hover{
+    background-color: yellow;
+    color: rgb(8, 16, 24);
+    border: 2px solid #130d0d;
+    padding: 10px 20px;
+    margin: 100px auto; 
+    border-radius: 20px;
+}
+#about .about-content img{
+    width: 450px;
+}
+/* offer start */
+#offers{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background:url("./images/offer-background.jpg") no-repeat center/cover fixed ;
+
+}
+#offers .title{
+    margin:0 auto 100px ;
+    align-items: center;
+    color:#f2f2f6;
+}
+#offers .title h2{
+    margin: 20px auto 20px;
+    color: yellow;
+   
+}
+#offers .title p{
+    color: #fff;
+
+}
+.offers-items{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;   
+    width: 90vw;
+   
+}
+
+.offers-items div h3,
+.offers-items div p{
+    color: #f2f2f6;
+    margin: 10px;
+}
+/* offer end */
+/* menu start */
+#menu{
+    background-color: #f4f4f4;
+    padding: 5rem 0;
+}
+#menu .container .title{
+    color: #130d0d;
+    text-align: center;
+    margin: auto;
+}
+#menu .container .title h2{
+    margin: 20px;
+    font-size: 50px;
+
+}
+#menu .menu-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+#menu .menu-items .menu-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+#menu .menu-items .menu-item img{
+    margin: 20px;
+}
+#menu .container .title p{
+    color: #635959;
+}
+#menu .menu-items .menu-item h3{
+    border-bottom: 2px solid #98989d;
+    padding: 4px;
+    margin: 4px;
+    
+
+}
+#menu .btn{
+    background-color:yellow;
+    color: #000000;
+    width: 300px;
+    padding: 14px;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+    border: #000000 1px solid;
+    cursor: pointer;
+    transition: .5s;
+}
+#menu .btn:hover{
+    background-color: #383848;
+    color: #f2f2f6;
+    transform: translate(4-px);
+}
+
+
+/* menu end */
+
+/* daytime start */
+#daytime {
+    background: url(./images/daytime_bg.jpeg) center center/cover fixed no-repeat;    
+    display: flex;
+    justify-content:center;   
+    align-items: center;
+    
+}
+
+#daytime .daytime-items{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    justify-content:space-evenly;     
+    align-items: center;
+}
+#daytime .daytime-items h3{
+    font-size: 32px;
+    margin: 20px 0 10px 0;
+}
+/* daytime end */
+
+/* gallery start */
+#gallery {
+    margin: 100px auto 100px;
+    text-align: center;
+    background: url(./images/offer-background.jpg) center center/cover no-repeat;
+    width: 100vw;
+    padding: 40px;
+}
+#gallery h2{
+    color: yellow;
+    margin-bottom: 40px;
+}
+#gallery h2:hover{
+    text-shadow: 1px 2px 5px #98989d;
+}
+#gallery .img-gallery img{
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+    margin: 15px;
+    transform: 1s;
+}
+#gallery .img-gallery img:hover{
+    transform: translate(5px);
+    box-shadow: 2px 3px 4px 3px rgb(194, 194, 176);
+    opacity: .8;
+}
+#contact .container .contact-content{
+    
+    width: 100vw;
+    height: 80vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+
+}
+#contact .container .contact-content .contact-info h3{
+    color: #383848;
+    margin: 30px 0 20px 0;
+    font-size: 20px;
+
+}
+#contact .container .contact-content .contact-info p{
+    margin: 5px;
+}
+#contact .container .contact-content form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+    /* background-color: rgb(245, 242, 237); */
+    width: 40vw;
+    height: max-content;
+    gap: 40px;    
+    border-radius: 40px;
+
+}
+#contact .container .contact-content form input{
+    width:40vw;
+    font-size: 20px;
+    height: 45px;
+    /* text-align: center; */
+    padding: 7px;
+    background-color: rgb(234, 228, 233);
+    border-radius: 6px;
+    margin: 10px;
+}
+ /*gallery end */
+
